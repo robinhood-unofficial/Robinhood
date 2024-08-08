@@ -33,6 +33,7 @@ WATCHLISTS = API_BASE / "watchlists/"
 OPTIONS_BASE = API_BASE / "options/"
 OPTIONS_CHAIN_BASE = OPTIONS_BASE / "chains/"
 OPTIONS_INSTRUMENTS_BASE = OPTIONS_BASE / "instruments/"
+OPTIONS_ORDERS_BASE = OPTIONS_BASE / "orders/"
 
 # User
 USER = API_BASE / "user/"
@@ -116,6 +117,21 @@ def build_orders(order_id: Optional[str] = None) -> URL:
         return ORDERS_BASE / f"{order_id}/"
     else:
         return ORDERS_BASE
+
+def build_options_orders(order_id: Optional[str] = None) -> URL:
+    """Build endpoint to place options orders."
+
+    Args:
+        order_id: the id of the order
+
+    Returns:
+        A constructed URL for a particular order or the base URL for options orders.
+
+    """
+    if order_id is not None:
+        return OPTIONS_ORDERS_BASE / f"{order_id}/"
+    else:
+        return OPTIONS_ORDERS_BASE
 
 
 def build_news(stock: str) -> URL:
