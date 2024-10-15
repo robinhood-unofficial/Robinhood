@@ -39,12 +39,12 @@ HEADERS: CaseInsensitiveDictType = CaseInsensitiveDict(
         "Accept-Encoding": "gzip, deflate",
         "Accept-Language": "en;q=1, fr;q=0.9, de;q=0.8, ja;q=0.7, nl;q=0.6, it;q=0.5",
         "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
-        "X-Robinhood-API-Version": "1.0.0",
+        "X-Robinhood-API-Version": "1.431.4",
         "Connection": "keep-alive",
         "User-Agent": "Robinhood/823 (iPhone; iOS 7.1.2; Scale/2.00)",
     }
 )
-"""Headers used when performing requests with robinhood api."""
+"""Headers used when performing requests with robinhood api. API Version is current as of 2024-10-15."""
 # 8.5 days (you have a small window to refresh after this)
 # I would refresh the token proactively every day in a script
 EXPIRATION_TIME: int = 734000
