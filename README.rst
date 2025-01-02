@@ -89,4 +89,5 @@ Related
 
 * `robinhood-ruby <https://github.com/rememberlenny/robinhood-ruby>`_ - RubyGem for interacting with Robinhood API
 * `robinhood-node <https://github.com/aurbano/robinhood-node>`_ - NodeJS module to make trades with Robinhood Private API
+* `nrobinhood-csharp <https://github.com/sajidmohammed88/robinhood-csharp>`_ - .NetCore package to make trades with Robinhood API
 * See the original `blog post <https://medium.com/@rohanpai25/reversing-robinhood-free-accessible-automated-stock-trading-f40fba1e7d8b>`_.
